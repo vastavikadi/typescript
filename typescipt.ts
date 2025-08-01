@@ -1,0 +1,1 @@
+console.log("This is a very old codes collection when i was learning typescript from the Channel named: Chai aur Code");
