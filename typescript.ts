@@ -1,1 +1,2 @@
 console.log("This is a very old codes collection when i was learning typescript from the Channel named: Chai aur Code");
+console.log("Typescript is a dev tool and not a language itself. Everything u write in typescript is ultimately converted to js and runs. It justs enables the type checks to avoid the runtime errors.")
