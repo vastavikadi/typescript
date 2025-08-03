@@ -8,3 +8,4 @@ const userT1: tupleUser  =[3,'4'];
 //another bad behaviour of ts in tuples
 // userT1[1]='8'; 
 // userT1.push();these works technically should not as it is const and we are declaring and also the methods like unshift shift and all also works which should not (works only for defined types like in it the types of tupleUser are number and string and hence both can be pushed)
+
