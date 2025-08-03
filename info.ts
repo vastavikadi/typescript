@@ -1,6 +1,8 @@
 //you should not be using be defining the types everyhwere you want, only in the cases its actually needed and thats the best practice
 
 let userId: number= 7933084;//now here typescript is smart enough to know(as you have already defined and intialized at one place) tht userId is always gonna be number so you dont need to define it explicitly
+// ":" A type annotation in TypeScript.
+// It tells TypeScript the type of the variable.
 
 // userId="Aditya";//not assignable 
 
