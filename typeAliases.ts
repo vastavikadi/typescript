@@ -7,6 +7,7 @@ type User ={
     isActive:boolean;
     isPaid:boolean;
     credCardDetails?:number;//? means it is optional and dont need to pass
+    // startSession():string this can have the methods as well
 }
 
 const variable1: User={
