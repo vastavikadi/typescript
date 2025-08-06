@@ -8,3 +8,5 @@ class Users {
   }
 }
 const Amisha = new Users("Amisha@gmail.com", "Amisha"); //new instance/object of the class Users
+
+

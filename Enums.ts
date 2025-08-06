@@ -21,7 +21,7 @@ console.log(clgMember)
 //     WINDOW=9,
 //     LAST
 // }
-//this is above commented out enum generates the equivalent code in js using IIFE example below:
+//this is above commented out (one with no const) enum generates the equivalent code in js using IIFE example below:
 // var clgStudent;
 // (function (clgStudent) {
 //     clgStudent[clgStudent["AISLE"] = 0] = "AISLE";

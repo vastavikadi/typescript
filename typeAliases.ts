@@ -1,7 +1,7 @@
 // Effects of readonly and ? on objects
 
 type User ={
-    readonly _id: string;//suppose the _id is the object id from mongoDb and u dont want anyone to manipulae it so u can mark it as readOnly and it will not be chnged
+    readonly _id: string;//suppose the _id is the object id from mongoDb and u dont want anyone to manipulate it so u can mark it as readOnly and it will not be chnged
     name:string;
     age:number;
     isActive:boolean;
