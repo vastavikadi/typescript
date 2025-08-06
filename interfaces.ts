@@ -2,22 +2,22 @@
 interface UserInterface {
   readonly _id: string;
   userId: number;
-  nameOfUser: string;
-  age: number;
+  nameOfUser1: string;
+  age1: number;
   startTrial: () => string; //this is a method which will return a string
   endSession(sessionId:number): void; //this is also a method and just another way to write that returns void;
 }
 
 const _id = "u93u9439";
 const userId = 5794792;
-let nameOfUser = "Hey";
-const age = 6;
+let nameOfUser1 = "Hey";
+const age1 = 6;
 
 const user: UserInterface = {
   _id,
   userId,
-  nameOfUser,
-  age,
+  nameOfUser1,
+  age1,
   githubId:"yieuiw",
   startTrial: () =>{ 
     return "";
@@ -34,8 +34,8 @@ kind:"Herbivore"|"Carnivore";
 const Deer: Animal = {
   _id,
   userId,
-  nameOfUser,
-  age,
+  nameOfUser1,
+  age1,
   githubId:"yieuiw",
   startTrial: () => {
     return "";
