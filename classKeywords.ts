@@ -9,10 +9,24 @@ class Users1 {
     //types of the input
     this.email = email;
     this.name = name;
-    this.city = "city";
+    // this.city = city;if taken in constructor then readonly can be altered
   }
 }
-const Amisha1 = new Users("Amisha@gmail.com", "Amisha");
+const Amisha1 = new Users1("Amisha@gmail.com", "Amisha","Agra");
+console.log(Amisha1)
 // const Amisha1 = new Users("Amisha@gmail.com", "Amisha","Agra");wont work because city is readonly
 
 // Amisha1.city = "Hey";//city is readonly
+
+//in the production there is a shortcut to write these:
+class User2{
+    readonly city: string="Jaipur"
+    constructor(
+        public name:string,
+        public email:string,
+        private userId: string,//can be passed on into the constructor to create the new instance
+    ){}
+}
+
+const Misha = new User2("Misha", "misha@gmail.com","Hey");
+console.log(Misha)
