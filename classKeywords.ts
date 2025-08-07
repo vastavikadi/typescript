@@ -30,3 +30,6 @@ class User2{
 
 const Misha = new User2("Misha", "misha@gmail.com","Hey");
 console.log(Misha)
+
+
+//protected is a keyword like private, private class ke bahar make it unavailable (even if koi subclass ho of that class) but protected make it accessible to the subclasses of that parent class
