@@ -48,8 +48,36 @@ const stringBox = new Box<string>("Hello");
 
 console.log(numberBox.getValue)
 
-//chai and code explanation
 
+//bonus for generics
+function logLength<T = string>(value: T): void {
+  console.log((value as any).length);
+}
+// <T = string>:
+// This means the generic type T defaults to string if you don’t explicitly provide a type. to explicitly provide the type:(logLength<number>)
+// So logLength() is assumed to work with string by default, but you can also pass other types.
+
+// (value as any).length:
+// Here, you're forcing TypeScript to allow access to .length by casting value to any, bypassing type checks.
+// This works at runtime as long as the actual object has a .length property (like strings and arrays).
+
+
+//ANOTHER IMPORTANT EXAMPLE
+function logLength2<T extends { length: number }>(value: T): void{
+    console.log(value.length);
+}
+// <T extends { length: number }>:
+// This tells TypeScript:
+// “T can be any type, as long as it has a length property of type number.”
+// It's a generic constraint — you're not allowing just any type, but only types that match { length: number }.
+
+// value: T:
+// The input must conform to T, which in turn must conform to { length: number }.
+// console.log(value.length):
+// Now safe! Because TypeScript knows that value has a .length property
+logLength2<string>("hello");
+
+//chai and code explanation
 function anotherFunction<T, U>(valueOne: T, valueTwo: U): object {
   //lets say T and U are both datatypes valueOne is of type T and similarly valueTwo is of type U
   return {
